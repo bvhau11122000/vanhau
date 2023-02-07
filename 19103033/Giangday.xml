@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="giangday.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<datagvmh>
+    <giaovien>
+        <Giaovien>
+            <maGV>01323</maGV>
+            <TenGv>Le Van Cong</TenGv>
+            <diachi>21/ Hong Ha</diachi>
+            <dienthoai>0334222111</dienthoai>
+        </Giaovien>
+      <Giaovien>
+          <maGV>2</maGV>
+          <TenGv>Nguyen Van Hau</TenGv>
+          <diachi>1/YWang</diachi>
+          <dienthoai>0755648664</dienthoai>
+      </Giaovien>
+      <Giaovien>
+        <maGV>23121</maGV>
+        <TenGv>NGuyen Tuan Anh</TenGv>
+        <diachi>421421/3232 Le  Hong Ha</diachi>
+        <dienthoai>09035622</dienthoai>
+      </Giaovien>
+    </giaovien>
+<monhoc>
+  <Monhoc>
+    <maMH>01</maMH>
+    <TenMh>Toán</TenMh>
+    <sotinchi>04</sotinchi>
+    <ngaybatdau>11/11/2001</ngaybatdau>
+  </Monhoc>
+</monhoc>
+</datagvmh>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+    <xs:element name="datagvmh" >
+        <xs:complexType>
+            <xs:sequence >
+                <xs:element name="giaovien" type="Giaovien" />
+                <xs:element name="giangday" type="Giangday" />
+                <xs:element name="monhoc" type="Monhoc" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+ 
+    <!-- Parent Elements  -->
+    <xs:complexType name="Giaovien">
+        <xs:sequence >
+            <xs:element name="Giaovien" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="maGV" type="xs:int" />
+                        <xs:element name="TenGv" type="xs:string" />
+                        <xs:element name="diachi" type="xs:string" />
+                        <xs:element name="dienthoai" type="DT" />
+                    </xs:sequence>
+                </xs:complexType>  
+            </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+        <!--  -->
+        <xs:complexType name="Giangday">
+            <xs:sequence >
+                <xs:element name="Giangday" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="maGV" type="xs:int" />
+                            <xs:element name="TenGv" type="xs:string" />
+                            <xs:element name="ngaybatdau" type="xs:date" />
+                        </xs:sequence>
+                    </xs:complexType>  
+                </xs:element>            
+            </xs:sequence>
+            </xs:complexType>
+        
+            <xs:complexType name="Monhoc">
+                <xs:sequence >
+                    <xs:element name="Monhoc" maxOccurs="unbounded">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="maMH" type="xs:int" />
+                                <xs:element name="TenMh" type="xs:string" />
+                                <xs:element name="sotinchi" type="xs:int" />
+                            </xs:sequence>
+                        </xs:complexType>  
+                    </xs:element>            
+                </xs:sequence>
+                </xs:complexType>
+
+     <!-- Custom Type  -->
+    <xs:simpleType name="DT">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0]{1}[0-9]{9}" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
